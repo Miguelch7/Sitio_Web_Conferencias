@@ -16,6 +16,12 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@300;400;700&family=PT+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -23,9 +29,15 @@
 </head>
 
 <body>
+
+  <!-- Header -->
   <header class="site-header">
+
+    <!-- Hero -->
     <div class="hero">
       <div class="contenido-header">
+
+        <!-- Redes Sociales-->
         <nav class="redes-sociales">
           <a href="#"><i class="fab fa-facebook-f"></i></a>
           <a href="#"><i class="fab fa-twitter"></i></a>
@@ -33,18 +45,109 @@
           <a href="#"><i class="fab fa-youtube"></i></a>
           <a href="#"><i class="fab fa-instagram"></i></a>
         </nav>
+
+        <!-- Información del evento -->
         <div class="informacion-evento">
           <div class="clearfix">
             <p class="fecha"><i class="fas fa-calendar-alt"></i> 10-12 Dic</p>
             <p class="ciudad"><i class="fas fa-map-marker-alt"></i> Guadalajara, MX</p>
           </div>
-          
+
           <h1 class="nombre-sitio">GdlWebCamp</h1>
           <p class="slogan">La mejor conferencia de <span>diseño web</span></p>
-        </div><!-- Información evento -->
+        </div>
+
       </div>
-    </div><!-- Hero -->
+
+    </div>
   </header>
+
+  <!-- Barra Menú -->
+  <div class="barra">
+    <div class="contenedor clearfix">
+
+      <!-- Logo -->
+      <div class="logo">
+        <img src="img/logo.svg" alt="Logotipo GDLWEBCAMP">
+      </div>
+
+      <!-- Boton Menú Móvil -->
+      <div class="menu-movil">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Navegación -->
+      <nav class="navegacion-principal">
+        <a href="#">Conferencia</a>
+        <a href="#">Calendario</a>
+        <a href="#">Invitados</a>
+        <a href="#">Reservaciones</a>
+      </nav>
+
+    </div>
+
+  </div>
+
+  <!-- Descripción del evento -->
+  <section class="seccion contenedor">
+    <h2>La mejor conferencia de diseño web en español</h2>
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+    aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
+    enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
+    ratione voluptatem sequi nesciunt.</p>
+  </section>
+
+  <!-- Programa del Evento -->
+  <section class="programa">
+    <div class="contenedor-video">
+      <video autoplay loop poster="bg-talleres.jpg">
+        <source src="video/video.mp4" type="video/mp4">
+        <source src="video/video.webm" type="video/webm">
+        <source src="video/video.ogv" type="video/ovg">
+      </video>
+    </div>
+
+    <div class="contenido-programa">
+      <div class="contenedor">
+        <div class="programa-evento">
+
+          <h2>Programa del Evento</h2>
+
+          <nav class="menu-programa">
+            <a href="#"><i class="fa fa-code"></i> Talleres</a>
+            <a href="#"><i class="fa fa-comment"></i> Conferencias</a>
+            <a href="#"><i class="fa fa-university"></i> Seminarios</a>
+          </nav>
+
+          <div id="talleres" class="info-curso ocultar clearfix">
+            <div class="detalle-evento">
+              <h3>HTML5, CSS3 y JavaScript</h3>
+              <p><i class="fa fa-clock"></i> 16:00 hrs</p>
+              <p><i class="fa fa-calendar"></i> 10 de Dic</p>
+              <p><i class="fa fa-user"></i> Miguel Angel Chanampa</p>
+            </div>
+
+            <div class="detalle-evento">
+              <h3>Responsive Web Design</h3>
+              <p><i class="fa fa-clock"></i> 20:00 hrs</p>
+              <p><i class="fa fa-calendar"></i> 10 de Dic</p>
+              <p><i class="fa fa-user"></i> Miguel Angel Chanampa</p>
+            </div>
+            
+            <a href="#" class="button float-right">Ver Todos</a>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
 
   <!-- Add your site or application content here -->
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
