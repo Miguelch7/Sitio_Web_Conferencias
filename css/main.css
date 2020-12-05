@@ -129,7 +129,6 @@ body {
 }
 
 .seccion p {
-  height: 1.2em;
   text-align: center;
 }
 
@@ -174,9 +173,16 @@ h3 {
   background-color: #e33000;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .float-right {
   float: right;
 }
+
 
 /* Header */
 div.hero {
@@ -449,7 +455,61 @@ div.detalle-evento p {
   font-size: 20px;
 }
 
-div.detalle-evetno
+/* Invitados */
+ul.lista-invitados li {
+  padding: 10px;
+  float: left;
+}
+
+@media (min-width: 480px) {
+  ul.lista-invitados li {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  ul.lista-invitados li {
+    width: 33.3%;
+  }
+}
+
+div.invitado {
+  position: relative;
+  overflow: hidden;
+}
+
+div.invitado img {
+  max-width: 100%;
+  filter: gray;
+  -webkit-filter: grayscale(1);
+  -webkit-transition: all .5s ease-in-out;
+}
+
+div.invitado:hover img {
+  -webkit-filter: grayscale(0);
+  -webkit-transform: scale(1.1);
+}
+
+div.invitado p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 15px 10px;
+  margin: 0;
+  background-color: rgba(0, 0, 0, .55);
+  width: 100%;
+  text-align: left;
+  font-family: 'Oswald', sans-serif;
+  color: #fe4918;
+  text-transform: uppercase;
+  transition: all .5s ease-in-out;
+}
+
+div.invitado:hover p {
+  bottom: -80px;
+  opacity: 0;
+}
+
 
 
 /* ==========================================================================
