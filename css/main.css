@@ -897,7 +897,7 @@ p.copyright {
 /* INTERNAS */
 
 /* CONFERENCIA */
-body.conferencia .navegacion-principal .activo {
+.navegacion-principal a.activo {
   border-bottom: 2px solid #fe4918;
 }
 div.galeria a {
@@ -1036,6 +1036,62 @@ div.resumen input {
   display: none;
   background-color: rgba(255, 0 , 0, 0.1);
   border-radius: 10px;
+}
+
+/* CALENDARIO */
+div.calendario h3 {
+  background-color: #fe4918;
+  clear: both;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+div.calendario::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+
+div.dia {
+  width: 50%;
+  float: left;
+  border: 2px solid #e1e1e1;
+  transition: all .3s ease;
+}
+
+@media (min-width: 768px) {
+  div.dia {
+    width: 33.3%;
+    min-height: 240px;
+    padding-top: 20px;
+  }
+}
+
+div.dia:hover {
+  background-color: #e1e1e1;
+  -webkit-transform: scale(1.1);
+}
+
+div.dia p {
+  font-weight: 1em;
+}
+
+div.dia p.titulo {
+  color: #fe4918;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+div.dia i {
+  color: #fe4918;
+  font-size: 1.5em;
+}
+
+/* COLORBOX */
+div.cboxElement {
+  padding: 30px !important;
+  text-align: center;
 }
 
 

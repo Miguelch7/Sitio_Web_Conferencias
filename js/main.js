@@ -154,6 +154,11 @@ $(function() {
   $('.nombre-sitio').lettering();
 
 
+  // AGREGAR CLASE A MENU
+  $('body.conferencia .navegacion-principal a:contains("Conferencia")').addClass('activo');
+  $('body.calendario .navegacion-principal a:contains("Calendario")').addClass('activo');
+  $('body.invitados .navegacion-principal a:contains("Invitados")').addClass('activo');
+
   // Menú fijo
   var windowHeight = $(window).height();
   var barraHeight = $('.barra').innerHeight();
@@ -184,7 +189,7 @@ $(function() {
 
     $('.menu-programa a').removeClass('activo'); // Removemos la clase activo de todos los enlaces
     $('.ocultar').hide(); // Ocultamos todos los enlaces
-    
+
     $(this).addClass('activo'); // Añadimos la clase activo al enlace presionado
     var enlace = $(this).attr('href');
     $(enlace).fadeIn(700); // Mostramos enlace presionado
@@ -209,7 +214,10 @@ $(function() {
   });
 
 
+  // ColorBox
+  $('.invitado-info').colorbox({inline:true, width: '50%'});
 
 
-   
+
+
 });
